@@ -31,3 +31,6 @@
 *.out
 *.app
 /bin/clean-dump
+
+# Python venv
+.venv/
