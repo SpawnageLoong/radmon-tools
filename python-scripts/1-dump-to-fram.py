@@ -51,8 +51,8 @@ def process_txt_files(input_dir, output_dir):
 if __name__ == "__main__":
     # Initialize the argument parser
     parser = argparse.ArgumentParser(description="Convert text files to CSV format.")
-    parser.add_argument("input_dir", help="Path to the directory containing the input text files.")
-    parser.add_argument("output_dir", help="Path to the directory where the output CSV files will be saved.")
+    parser.add_argument("--input_dir", required=True, help="Path to the directory containing the input text files.")
+    parser.add_argument("--output_dir", required=True, help="Path to the directory where the output CSV files will be saved.")
 
     args = parser.parse_args()
 
